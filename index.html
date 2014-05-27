@@ -1,0 +1,280 @@
+<!--
+/**
+ * @author      George Yanev (http://github.com/tunnckoCore)
+ * 
+ * @license     MIT License (http://opensource.org/licenses/MIT)
+ * @copyright   2013, WAF Development
+ */
+-->
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="bg" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="bg" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="bg" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="bg" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="bg" ><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Whistle-BG: Хостинг и споделяне на изображения, снимки и картинки</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <meta property="og:url" content="http://www.whistle-bg.tk/">
+  <meta property="og:title" content="Изображения, снимки, картинки, хостинг и галерия | Whistle">
+  <meta property="og:description" content="Whistle е приятено място с галерия за разглеждане, съхраняване и споделяне на изображения, снимки и картинки.">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="Whistle: Изображения, снимки, картинки">
+  
+        <!-- Icons Not Work Minified
+        <link rel="stylesheet" href="css/charlike.bs303.min.css">-->
+
+        <link rel="stylesheet" href="css/pace/circle.css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" href="css/pictonic/pictonic.css">
+        <link rel="stylesheet" href="css/fontello/fontello.css">
+        <link rel="stylesheet" href="css/icomoon/icomoon.css">
+        <link rel="stylesheet" href="flags/sm/flags.css">
+        <link rel="stylesheet" href="css/tmf-projection.css">
+        <link rel="stylesheet" href="css/prettify.css">
+        <link rel="stylesheet" href="css/custom-style.css">
+
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script async type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+      </head>
+      <body class="tmf projection">
+        <div class="tmf-container">
+          <header class="tmf global-header themebg">
+            <hgroup class="tmf global-micro">
+              <h1>Хостинг и споделяне на изображения, снимки и картинки</h1>
+              <h2>Място за вашите изображения, снимки, картинки, хостинг и галерия</h2>
+            </hgroup>
+            <span class="tmf brand-nav btn-group">
+              <a href="index.html" class="brand-name" rel="home" data-placement="bottom" data-toggle="tooltip" data-original-title="Начална страница">
+                <h4>
+                  Whistle-BG 
+                </h4>
+              </a>
+              <nav role="navigation">
+                <a href="#menuer" class="dropdown-toggle" data-toggle="dropdown">
+                  <span data-placement="right" data-toggle="tooltip" data-original-title="Главно Меню">
+                    <span class="tmf global-micro">Изображения</span>
+                    <i class="fa fa-caret-down"></i>
+                  </span>
+                </a>
+                <ul class="tmf fw-dropdown dropdown-menu" role="menu" id="tmfMainMenu">
+                  <li><a href="#about" class="themetxt" data-href="about" role="menuitem" data-toggle="tab">За Нас</a></li>
+                  <li><a href="#tos" class="themetxt" data-href="tos" role="menuitem" data-toggle="tab">Условия</a></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" role="menuitem" data-toggle="tab">Реклама</a></li>
+                  <li><a href="#faq" class="themetxt" data-href="faq" role="menuitem" data-toggle="tab">Помощ</a></li>
+                  <li><a href="#developers" class="themetxt" data-href="developers" role="menuitem" data-toggle="tab">API</a></li>
+                </ul>
+              </nav>
+            </span>
+            <!-- Single button -->
+            <span class="tmf theme-styles pull-right btn-group">
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-spinx fa-tint"></i>
+              </a>
+              <ul class="tmf dropdown-menu collorize text-center">
+                <li class="add-class collore color-orange" data-color="orange" data-placement="bottom" data-toggle="tooltip" data-original-title="Оранжево"></li>
+                <li class="add-class collore color-green" data-color="red" data-placement="bottom" data-toggle="tooltip" data-original-title="Червено"></li>
+                <li class="add-class collore color-blue" data-color="blue" data-placement="bottom" data-toggle="tooltip" data-original-title="Синьо"></li>
+                <li class="add-class collore color-red" data-color="green" data-placement="bottom" data-toggle="tooltip" data-original-title="Зелено"></li>
+                <li class="add-class collore color-gray" data-color="gray" data-placement="bottom" data-toggle="tooltip" data-original-title="Сиво"></li>
+                <li class="add-class collore color-black" data-color="black" data-placement="bottom" data-toggle="tooltip" data-original-title="Черно"></li>
+              </ul>
+            </span>
+          </header>
+
+          <div id="mainerwe" class="container tmf page-main">
+            <div class="row">
+              <div class="col-lg-offset-1 col-lg-8 col-md-9 col-sm-9 col-xs-9 tmf-nivelir-bottom">
+                <div class="row">
+                  <div class="col-lg-12" id="tmfResults">
+                    <!-- Start Tab Content -->
+                    <div id="tmfLoadPage" class="tab-content">
+
+                      <div class="tab-pane active whistleHomeUploader" id="home"><!-- TAB: Homepage -->
+                        <div class="tmf page-content">
+                          <div class="box-front">
+                            <div class="titler themebg">
+                              <h3>
+                                <i class="fa fa-laptop"></i> Прикачи изображения от твоя компютър
+                              </h3>
+                            </div>
+                            <div class="bodyr">
+                              <ol class="breadcrumb">
+                                <li><a href="index.html" class="themetxt">Начална страница</a></li>
+                                <li><span class="active themetxt">Качване от компютър</span></li>
+                                <span class="pull-right"><a href="#" class="click-flip themetxt">качи през линк</a></span>
+                              </ol>
+                              <div class="body-content">
+                                <div class="custom-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                  nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="page-upload">
+                                  <form class="form-horizontal" role="form"
+                                  method="post"
+                                  action="api/3.0/upload/remote" 
+                                  enctype="multipart/form-data">
+                                  <div class="row">
+                                    <span class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
+                                      <span class="col-lg-12 col-md-12 col-sm-12 btn btn-warning themebg fileinput-button">
+                                        <i class="fa fa-plus"></i>&nbsp; <span>Избери изображения</span>
+                                        <span class="tm-returnBack"><input type="file" name="whistles[]" required multiple></span>
+                                      </span>
+                                    </span>
+                                    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                      <button type="submit" name="upload" class="btn btn-default tm-whistles-upload">
+                                        <i class="fa fa-chevron-right"></i>&nbsp; Прикачи
+                                      </button>
+                                    </span>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-back">
+                          <div class="titler themebg">
+                            <h3>
+                              <i class="fa fa-link"></i> Качване на изображение от линк
+                            </h3>
+                          </div>
+                          <div class="bodyr">
+                            <ol class="breadcrumb">
+                              <li><a href="index.html" class="themetxt">Начална страница</a></li>
+                              <li><span class="active themetxt">Качване от линк</span></li>
+                              <span class="pull-right"><a href="#" class="click-flip themetxt">обратно</a></span>
+                            </ol>
+                            <div class="body-content">
+                              <div class="custom-text">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                              </div>
+                              <div class="page-upload">
+                                <form class="form-inline" 
+                                method="post"
+                                action="#"
+                                enctype="multipart/form-data">
+                                <div class="row">
+                                  <div class="col-lg-10 col-md-10 col-sm-9 col-xs-9">
+                                    <input type="text" class="form-control" placeholder="Линк към изображението" required>
+                                  </div>
+                                  <button type="submit" name="upload" class="btn btn-default tm-whistles-upload">
+                                    <i class="fa fa-chevron-right"></i>&nbsp; Прикачи
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- //TAB: Homepage --></div>
+                  </div><!-- //Tab Content -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="tmf global-adverts">
+                    <ol class="breadcrumb" id="tmfMainMenu">
+                      <li><b>Ads</b></li>
+                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="tmf stats">
+                    <div class="titler themebg text-center">
+                      <h3>Статистика</h3>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item"><span class="badge themebg">JPG</span>6,204</li>
+                      <li class="list-group-item"><span class="badge themebg">PNG</span>13,467</li>
+                      <li class="list-group-item"><span class="badge themebg">GIF</span>3,193</li>
+                      <li class="list-group-item"><span class="badge themebg">Общо</span>27,236</li>
+                      <li class="list-group-item"><span class="badge themebg">Днес</span>1,189</li>
+                      <li class="list-group-item themebg text-center"><em>от 26.10.2012г.</em></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!-- //col 2 rightside board-->
+
+          </div>
+
+        </div>
+
+        <div class="tmf global-footer fixed-bottom">
+          <ol class="breadcrumb themebg text-center" id="tmfMainMenu">
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="#faq" data-href="faq" data-toggle="tab">Помощ</a></li>
+            <li><a href="#about" data-href="about" data-toggle="tab">За Нас</a></li>
+            <li><a href="#tos" data-href="tos" data-toggle="tab">Условия за ползване</a></li>
+            <li><a href="#advertise" data-href="advertise" data-toggle="tab">Реклама</a></li>
+            <li><a href="#developers" data-href="developers" data-toggle="tab">API</a></li>
+          </ol>
+
+        </div>
+      </div>
+        <!--
+        <div class="tmf-background-ads">
+            <img class="advertise" title="Background Ads" src="http://wallpapers.cc/files/walls/10898.jpg" alt="" data-href="https://www.google.bg/search?q=whistle-bg&oq=whistle-bg&pws=0">
+        </div>
+      -->
+      <footer id="footer" class="text-center">
+        <div class="social">
+          <a target="_blank" href="#" class="socialbtn facebook"><i class="fa fa-facebook"></i>Facebook</a>
+          <a target="_blank" href="#" class="socialbtn twitter"><i class="fa fa-twitter"></i>Twitter</a>
+          <a target="_blank" href="#" class="socialbtn google"><i class="fa fa-google-plus"></i>Google Plus</a>
+          <a target="_blank" href="skype:username?chat" class="socialbtn skype"><i class="fa fa-skype"></i>Skype</a>
+        </div>
+      </footer>
+
+      <!-- CORE JAVASCRIPT -->
+      <script type="text/javascript">
+      var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod|Android/i) != null || screen.width <= 480;
+
+      if (isMobileDevice) {
+        window.location.replace(window.location + "mobile.php");
+      }
+      </script>
+      <script src="js/pace/pace.min.js"></script>
+
+      <script src="js/custom/jquery.min.js"></script>
+      <script src="js/custom/jquery.cookie.min.js"></script>
+      <script src="js/custom/custom.min.js"></script>
+      <script>
+      $(window).load(function(e) {
+        $('.pace').delay(450).fadeOut('slow');
+        
+      });
+      </script>
+
+      <script src="js/bootstrap/bootstrap.min.js"></script>
+      <script src="js/custom/prettify.js"></script>
+      <!--<script src="less/less-1.5.0.min.js"></script>-->
+      <!-- /CORE JAVASCRIPT -->
+
+    </body>
+    </html>
