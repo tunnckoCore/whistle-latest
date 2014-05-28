@@ -113,10 +113,10 @@ $(function() {
     window.prettyPrint && prettyPrint();
     $("#tmfMainMenu li a").click(function() {
         var e = $(this).attr("data-href");
-        if ($("#tmfLoadPage div")) {
-            $("#tmfLoadPage div").remove()
-        }
-        $("#tmfLoadPage").load("pages/" + e + ".html")
+        //if ($("#tmfLoadPage div")) {
+        //    $("#tmfLoadPage div").remove()
+        //}
+        //$("#tmfLoadPage").load("pages/" + e + ".html")
     });
     $(".tmf.page-content .box-front .click-flip").click(function() {
         $(".tmf.page-content").addClass("flipers")
