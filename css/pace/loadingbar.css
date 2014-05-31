@@ -1,4 +1,4 @@
-.pace {
+.progressify {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -32,7 +32,7 @@
   background-color: #fff;
 }
 
-.pace .pace-progress {
+.progressify .progressify-progress {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -72,11 +72,11 @@
   font-family:  Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.pace .pace-progress:after {
+.progressify .progressify-progress:after {
   content: attr(data-progress-text);
   display: inline-block;
 }
 
-.pace.pace-inactive {
+.progressify.progressify-inactive {
   display: none;
 }

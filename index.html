@@ -12,12 +12,14 @@
 <!--[if IE 7 ]>    <html lang="bg" class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="bg" class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="bg" class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="bg" ><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="bg">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Whistle-BG: Хостинг и споделяне на изображения, снимки и картинки</title>
 
+  <title>Whistle-BG: Хостинг и споделяне на изображения, снимки и картинки</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name=viewport content="width=device-width, initial-scale=1">
 
@@ -26,382 +28,342 @@
   <meta property="og:description" content="Whistle е приятено място с галерия за разглеждане, съхраняване и споделяне на изображения, снимки и картинки.">
   <meta property="og:image" content="">
   <meta property="og:site_name" content="Whistle: Изображения, снимки, картинки">
-  
-        <!-- Icons Not Work Minified
-        <link rel="stylesheet" href="css/charlike.bs303.min.css">-->
 
-        <link rel="stylesheet" href="css/pace/circle.css">
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
-        <link rel="stylesheet" href="css/pictonic/pictonic.css">
-        <link rel="stylesheet" href="css/fontello/fontello.css">
-        <link rel="stylesheet" href="css/icomoon/icomoon.css">
-        <link rel="stylesheet" href="flags/sm/flags.css">
-        <link rel="stylesheet" href="css/tmf-projection.css">
-        <link rel="stylesheet" href="css/prettify.css">
-        <link rel="stylesheet" href="css/custom-style.css">
+  <!-- Icons Not Work Minified
+  <link rel="stylesheet" href="css/charlike.bs303.min.css">-->
+  <link rel="stylesheet" href="css/pace/circle.css">
+  <link rel="stylesheet" href="css/pace/loadingbar.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+  <link rel="stylesheet" href="css/pictonic/pictonic.css">
+  <link rel="stylesheet" href="css/fontello/fontello.css">
+  <link rel="stylesheet" href="css/icomoon/icomoon.css">
+  <link rel="stylesheet" href="flags/sm/flags.css">
+  <link rel="stylesheet" href="css/tmf-projection.css">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <style>
+  #tmf_filedrag.hover{border: 1px solid blue;}.tmf.page-main .tmf.page-content .bodyr .body-content .custom-text a {color: #333}
+  </style>
 
-        <style>.tmf.page-main .tmf.page-content .bodyr .body-content .custom-text a {color: #333}</style>
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-        <script async type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-      </head>
-      <body class="tmf projection">
-        <div class="tmf-container">
-          <header class="tmf global-header themebg">
-            <hgroup class="tmf global-micro">
-              <h1>Хостинг и споделяне на изображения, снимки и картинки</h1>
-              <h2>Място за вашите изображения, снимки, картинки, хостинг и галерия</h2>
-            </hgroup>
-            <span class="tmf brand-nav btn-group">
-              <a href="/" class="brand-name" rel="home" data-placement="bottom" data-toggle="tooltip" data-original-title="Начална страница">
-                <h4>
-                  Whistle-BG 
-                </h4>
-              </a>
-              <nav role="navigation">
-                <a href="#menuer" class="dropdown-toggle" data-toggle="dropdown">
-                  <span data-placement="right" data-toggle="tooltip" data-original-title="Главно Меню">
-                    <span class="tmf global-micro">Изображения</span>
-                    <i class="fa fa-caret-down"></i>
-                  </span>
-                </a>
-                <ul class="tmf fw-dropdown dropdown-menu" role="menu" id="tmfMainMenu">
-                  <li><a href="#about" class="themetxt" data-href="about" role="menuitem" data-toggle="tab">За Нас</a></li>
-                  <li><a href="#tos" class="themetxt" data-href="tos" role="menuitem" data-toggle="tab">Условия</a></li>
-                  <li><a href="#advertise" class="themetxt" data-href="advertise" role="menuitem" data-toggle="tab">Реклама</a></li>
-                  <li><a href="#faq" class="themetxt" data-href="faq" role="menuitem" data-toggle="tab">Помощ</a></li>
-                  <li><a href="#developers" class="themetxt" data-href="developers" role="menuitem" data-toggle="tab">API</a></li>
-                </ul>
-              </nav>
-            </span>
-            <!-- Single button -->
-            <span class="tmf theme-styles pull-right btn-group">
-              <a class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-spinx fa-tint"></i>
-              </a>
-              <ul class="tmf dropdown-menu collorize text-center">
-                <li class="add-class collore color-orange" data-color="orange" data-placement="bottom" data-toggle="tooltip" data-original-title="Оранжево"></li>
-                <li class="add-class collore color-green" data-color="red" data-placement="bottom" data-toggle="tooltip" data-original-title="Червено"></li>
-                <li class="add-class collore color-blue" data-color="blue" data-placement="bottom" data-toggle="tooltip" data-original-title="Синьо"></li>
-                <li class="add-class collore color-red" data-color="green" data-placement="bottom" data-toggle="tooltip" data-original-title="Зелено"></li>
-                <li class="add-class collore color-gray" data-color="gray" data-placement="bottom" data-toggle="tooltip" data-original-title="Сиво"></li>
-                <li class="add-class collore color-black" data-color="black" data-placement="bottom" data-toggle="tooltip" data-original-title="Черно"></li>
-              </ul>
-            </span>
-          </header>
-
-          <div id="mainerwe" class="container tmf page-main">
-            <div class="row">
-              <div class="col-lg-offset-1 col-lg-8 col-md-9 col-sm-9 col-xs-9 tmf-nivelir-bottom">
-                <div class="row">
-                  <div class="col-lg-12" id="tmfResults">
-                    <!-- Start Tab Content -->
-                    <div id="tmfLoadPage" class="tab-content">
-
-                      <div class="tab-pane active whistleHomeUploader" id="home"><!-- TAB: Homepage -->
-                        <div class="tmf page-content">
-                          <div class="box-front">
-                            <div class="titler themebg">
-                              <h3>
-                                <i class="fa fa-laptop"></i> Прикачи изображения от твоя компютър
-                              </h3>
-                            </div>
-                            <div class="bodyr">
-                              <ol class="breadcrumb">
-                                <li><a href="/" class="themetxt">Начална страница</a></li>
-                                <li><span class="active themetxt">Качване от компютър</span></li>
-                                <span class="pull-right"><a href="#" class="click-flip themetxt">качи през линк</a></span>
-                              </ol>
-                              <div class="body-content">
-                                <div class="custom-text">
-                                  Най-добрият, най-бързият и гарантиран безплатен <strong>хостинг на изображения</strong>,
-                                  снимки, картинки, аватари, фотоси и мигове от Вашият живот. Да напомним, може да качвате по няколко файла.
-                                </div>
-                                <div class="page-upload">
-                                  <form class="form-horizontal" role="form"
-                                  method="post"
-                                  action="api/3.0/upload/remote" 
-                                  enctype="multipart/form-data">
-                                  <div class="row">
-                                    <span class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
-                                      <span class="col-lg-12 col-md-12 col-sm-12 btn btn-warning themebg fileinput-button">
-                                        <i class="fa fa-plus"></i>&nbsp; <span>Избери изображения</span>
-                                        <span class="tm-returnBack"><input type="file" name="whistles[]" required multiple></span>
-                                      </span>
-                                    </span>
-                                    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                      <button type="submit" name="upload" class="btn btn-default tm-whistles-upload">
-                                        <i class="fa fa-chevron-right"></i>&nbsp; Прикачи
-                                      </button>
-                                    </span>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script async type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body class="tmf projection" id="tmf_filedrag">
+  <div class="tmf-container">
+    <header class="tmf global-header themebg">
+    <hgroup class="tmf global-micro">
+    <h1>Хостинг и споделяне на изображения, снимки и картинки</h1>
+    <h2>Място за вашите изображения, снимки, картинки, хостинг и галерия</h2>
+    </hgroup>
+    <span class="tmf brand-nav btn-group">
+    <a href="/" class="brand-name" rel="home" data-placement="bottom" data-toggle="tooltip" data-original-title="Начална страница">
+      <h4>Whistle-BG </h4>
+    </a>
+    <nav role="navigation">
+    <a href="#menuer" class="dropdown-toggle" data-toggle="dropdown">
+    <span data-placement="right" data-toggle="tooltip" data-original-title="Главно Меню">
+    <span class="tmf global-micro">Изображения</span>
+    <i class="fa fa-caret-down"></i>
+    </span>
+    </a>
+    <ul class="tmf fw-dropdown dropdown-menu" role="menu" id="tmfMainMenu">
+      <li><a href="#about" class="themetxt" data-href="about" role="menuitem" data-toggle="tab">За Нас</a></li>
+      <li><a href="#tos" class="themetxt" data-href="tos" role="menuitem" data-toggle="tab">Условия</a></li>
+      <li><a href="#advertise" class="themetxt" data-href="advertise" role="menuitem" data-toggle="tab">Реклама</a></li>
+      <li><a href="#faq" class="themetxt" data-href="faq" role="menuitem" data-toggle="tab">Помощ</a></li>
+      <li><a href="#developers" class="themetxt" data-href="developers" role="menuitem" data-toggle="tab">API</a></li>
+    </ul>
+    </nav>
+    </span>
+    <!-- Single button -->
+    <span class="tmf theme-styles pull-right btn-group">
+    <a class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fa fa-spinx fa-tint"></i>
+    </a>
+    <ul class="tmf dropdown-menu collorize text-center">
+      <li class="add-class collore color-orange" data-color="orange" data-placement="bottom" data-toggle="tooltip" data-original-title="Оранжево"></li>
+      <li class="add-class collore color-green" data-color="red" data-placement="bottom" data-toggle="tooltip" data-original-title="Червено"></li>
+      <li class="add-class collore color-blue" data-color="blue" data-placement="bottom" data-toggle="tooltip" data-original-title="Синьо"></li>
+      <li class="add-class collore color-red" data-color="green" data-placement="bottom" data-toggle="tooltip" data-original-title="Зелено"></li>
+      <li class="add-class collore color-gray" data-color="gray" data-placement="bottom" data-toggle="tooltip" data-original-title="Сиво"></li>
+      <li class="add-class collore color-black" data-color="black" data-placement="bottom" data-toggle="tooltip" data-original-title="Черно"></li>
+    </ul>
+    </span>
+    </header>
+    <div id="mainerwe" class="container tmf page-main">
+      <div class="row">
+        <div class="col-lg-offset-1 col-lg-8 col-md-9 col-sm-9 col-xs-9 tmf-nivelir-bottom">
+          <div class="row">
+            <div class="col-lg-12" id="tmfResults">
+              <!-- Start Tab Content -->
+              <div id="tmfLoadPage" class="tab-content">
+                <div class="tab-pane active whistleHomeUploader" id="home">
+                  <!-- TAB: Homepage -->
+                  <div class="tmf page-content">
+                    <div class="box-front">
+                      <div class="titler themebg">
+                        <h3>
+                        <i class="fa fa-laptop"></i> Прикачи изображения от твоя компютър </h3>
+                      </div>
+                      <div class="bodyr">
+                        <ol class="breadcrumb">
+                          <li><a href="/" class="themetxt">Начална страница</a></li>
+                          <li><span class="active themetxt">Качване от компютър</span></li>
+                          <span class="pull-right"><a href="#" class="click-flip themetxt">качи през линк</a></span>
+                        </ol>
+                        <div class="body-content">
+                          <div class="custom-text">
+                             Най-добрият, най-бързият и гарантиран безплатен <strong>хостинг на изображения</strong>, снимки, картинки, аватари, фотоси и мигове от Вашият живот. Да напомним, може да качвате по няколко файла.
                           </div>
-                        </div>
-                        <div class="box-back">
-                          <div class="titler themebg">
-                            <h3>
-                              <i class="fa fa-link"></i> Качване на изображение от линк
-                            </h3>
-                          </div>
-                          <div class="bodyr">
-                            <ol class="breadcrumb">
-                              <li><a href="/" class="themetxt">Начална страница</a></li>
-                              <li><span class="active themetxt">Качване от линк</span></li>
-                              <span class="pull-right"><a href="#" class="click-flip themetxt">обратно</a></span>
-                            </ol>
-                            <div class="body-content">
-                              <div class="custom-text">
-                                Качването през отдаличен линк става за секунди, но за сметка на това няма възможност, за момента,
-                                да се качват по няколко наведнъж.
+                          <div class="page-upload">
+                            <form method="post" action="./" enctype="multipart/form-data" class="form-horizontal">
+                              <div class="row">
+                                <span class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
+                                <span class="col-lg-12 col-md-12 col-sm-12 btn btn-warning themebg fileinput-button">
+                                <i class="fa fa-plus"></i>&nbsp; <span>Избери изображения</span>
+                                <span class="tm-returnBack">
+                                <input id="tmf_files" name="files" type="file" required multiple/>
+                                </span>
+                                </span>
+                                </span>
+                                <span class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <button type="submit" id="tmf_upload_button" class="btn btn-default tm-whistles-upload">
+                                <i class="fa fa-chevron-right"></i>&nbsp; Прикачи </button>
+                                </span>
                               </div>
-                              <div class="page-upload">
-                                <form class="form-inline" 
-                                method="post"
-                                action="#"
-                                enctype="multipart/form-data">
-                                <div class="row">
-                                  <div class="col-lg-10 col-md-10 col-sm-9 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Линк към изображението" required>
-                                  </div>
-                                  <button type="submit" name="upload" class="btn btn-default tm-whistles-upload">
-                                    <i class="fa fa-chevron-right"></i>&nbsp; Прикачи
-                                  </button>
-                                </div>
-                              </form>
-                            </div>
+                            </form>
+                            <!--/form-->
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- //TAB: Homepage --></div>
-                    <!-- TAB: About Us -->
-                      <div class="tab-pane" id="about">
-                          <div class="tmf page-content">
-                              <div class="titler themebg">
-                                  <h3>
-                                      За нас - хората зад Whistle-BG.tk
-                                  </h3>
-                              </div>
-                              <div class="bodyr">
-                                  <ol class="breadcrumb">
-                                      <li><a href="./" class="themetxt">Начална страница</a></li>
-                                      <li><span class="active themetxt">За Нас</span></li>
-                                  </ol>
-                                  <div class="body-content">
-                                      <div class="custom-text">
-                                          Whistle-BG за краткото си съществуване събра много почитатели,
-                                          посетители и прикачени изображения. Целта на сайта е да се подобри и да се представи по
-                                          един по-добър начин услугата <strong><a href="index.php" rel="follow" title="хостинг за изображения">хостинг за изображения</a></strong>,
-                                          <strong>картинки</strong>,
-                                          снимки, аватари и фотоси, също така и <strong>споделяне на картинки и снимки</strong> с приятели. 
-                                      </div>
-                                      <div class="custom-text">
-                                          Сайтът главно е <strong>насочен към българската част от Мрежата</strong>.
-                                          Освен място за съхранение на Вашите снимки -  лични или не, картинки или общо казано изображения, 
-                                          Whistle иска да се предложи и като едно приятно място за прекарване на някаква част от времето. Като за тази цел предлага
-                                          вече над <strong>27.574 изображения общо за 19 месеца</strong>, както галерия (несъществуваща към Май 2014) и API за спонсори, партньори, приятели и девелъпъри.
-                                      </div>
-                                      <div class="custom-text">
-                                          Трябва да се има предвид, обаче, че от 8-ят месец сайта не функционира напълно, а достъпа до изображенията беше
-                                          прекъснат на 13-ят месец. Предвид и двата огромни прилива в 4-ят и 5-ят месец с по 4000 прикачени изображения..
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                    <div class="box-back">
+                      <div class="titler themebg">
+                        <h3>
+                        <i class="fa fa-link"></i> Качване на изображение от линк </h3>
                       </div>
-                      <!-- //TAB: About Us -->
-                      <!-- TAB: Frequently Asked Questions -->
-                      <div class="tab-pane" id="faq">
-                          <div class="tmf page-content">
-                              <div class="titler themebg">
-                                  <h3>
-                                      Често задавани въпроси и отговорите им
-                                  </h3>
-                              </div>
-                              <div class="bodyr">
-                                  <ol class="breadcrumb">
-                                      <li><a href="./" class="themetxt">Начална страница</a></li>
-                                      <li><span class="active themetxt">Често задавани въпроси</span></li>
-                                  </ol>
-                                  <div class="body-content">
-                                      <div id="faq-52b701c056f88" class="panel-group accordion">
-                                          <div class="panel">
-                                              <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                      <a class="accordion-toggle collapsed themetxt" 
-                                                         data-toggle="collapse" 
-                                                         href="#what-is-whistlebg">За какво е този сайт?</a>
-                                                  </h4>
-                                              </div><!-- .panel-heading -->
-                                              <div id="what-is-whistlebg" class="panel-collapse collapse">
-                                                  <div class="panel-body">
-                                                      <p>
-                                                          Claritas est etiam processus dynamicus, qui sequitur 
-                                                          mutationem consuetudium lectorum. Mirum est notare quam 
-                                                          littera gothica, quam nunc putamus parum claram, anteposuerit
-                                                          litterarum formas humanitatis per seacula quarta decima et
-                                                          quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari,
-                                                          fiant sollemnes in futurum.
-                                                      </p>
-                                                  </div><!-- .panel-body -->
-                                              </div>
-                                          </div><!-- .panel -->
-                      
-                      
-                                          <div class="panel">
-                                              <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                      <a class="accordion-toggle collapsed themetxt" data-toggle="collapse" data-parent="#faq-52b701c056f88" href="#faq-52b701c056f889">Do you provide product support?</a>
-                                                  </h4>
-                                              </div><!-- .panel-heading -->
-                                              <div id="faq-52b701c056f889" class="panel-collapse collapse">
-                                                  <div class="panel-body">
-                                                      <p>
-                                                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                          sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                                                          magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                                          quis nostrud exerci tation ullamcorper suscipit lobortis 
-                                                          nisl ut aliquip ex ea commodo consequat.
-                                                      </p>
-                                                      <p>Investigationes demonstraverunt lectores legere me
-                                                          lius quod ii legunt saepius. Claritas est etiam processus 
-                                                          dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                                      </p>
-                                                  </div><!-- .panel-body -->
-                                              </div>
-                                          </div><!-- .panel -->
-                      
-                      
-                                          <div class="panel">
-                                              <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                      <a class="accordion-toggle collapsed themetxt" data-toggle="collapse" data-parent="#faq-52b701c056f88" href="#faq-52b701c056f8815">How do I purchase your product?</a>
-                                                  </h4>
-                                              </div><!-- .panel-heading -->
-                                              <div id="faq-52b701c056f8815" class="panel-collapse collapse">
-                                                  <div class="panel-body">
-                                                      <p>
-                                                          Duis autem vel eum iriure dolor in hendrerit in vulputate
-                                                          velit esse molestie consequat, vel illum dolore eu feugiat
-                                                          nulla facilisis at vero eros et accumsan et iusto odio dignissim
-                                                          qui blandit praesent luptatum zzril delenit augue duis dolore te 
-                                                          feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend 
-                                                          option congue nihil imperdiet doming id quod mazim placerat
-                                                          facer possim assum.
-                                                      </p>
-                                                  </div><!-- .panel-body -->
-                                              </div>
-                                          </div><!-- .panel -->
-                                      </div><!-- #faq-52b701c056f88 -->
-                                  </div>
-                              </div>
+                      <div class="bodyr">
+                        <ol class="breadcrumb">
+                          <li><a href="/" class="themetxt">Начална страница</a></li>
+                          <li><span class="active themetxt">Качване от линк</span></li>
+                          <span class="pull-right"><a href="#" class="click-flip themetxt">обратно</a></span>
+                        </ol>
+                        <div class="body-content">
+                          <div class="custom-text">
+                             Качването през отдаличен линк става за секунди, но за сметка на това няма възможност, за момента, да се качват по няколко наведнъж.
                           </div>
-                      </div>
-                      <!-- //TAB: Frequently Asked Questions -->
-                      <!-- TAB: TOS -->
-                      <div class="tab-pane" id="tos">
-                          <div class="tmf page-content">
-                              <div class="titler themebg">
-                                  <h3>
-                                      За нас - хората зад Whistle-BG.tk
-                                  </h3>
+                          <div class="page-upload">
+                            <form class="form-inline" method="post" action="/upload" enctype="multipart/form-data">
+                              <div class="row">
+                                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-9">
+                                  <input type="text" class="form-control" placeholder="Линк към изображението" required>
+                                </div>
+                                <button type="submit" name="upload" class="btn btn-default tm-whistles-upload">
+                                <i class="fa fa-chevron-right"></i>&nbsp; Прикачи </button>
                               </div>
-                              <div class="bodyr">
-                                  <ol class="breadcrumb">
-                                      <li><a href="./" class="themetxt">Начална страница</a></li>
-                                      <li><span class="active themetxt">За Нас</span></li>
-                                  </ol>
-                                  <div class="body-content">
-                                      <div class="custom-text">
-                                          Всеки клиент ползващ услугите на сайта се съгласява да спазва изброените условия за ползване:
-                                      </div>
-                                      <div class="custom-text">
-                                          <ul>
-                                              <li>1. Като клиенти на сайта имате право да качвате неограничен брой <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="хостинг на изображения">изображения</a></strong> от форматите PNG, GIF, JPG, BMP</li>
-                                              <li>2. Не може да качвате изображения нарушаващи авторски права, които не притежавате или без разрешение на собсвеника им.</li>
-                                              <li>3. Не може да качвате изображения, които са обидни, накарняват нечие достойнство, пропагандират омраза или насилие.</li>
-                                              <li>4. Желателно е да докладвате на посочените емайли в секция „<strong><a href="/Информация-за-сайта-за-сайта" rel="follow">Информация</a></strong>“ ако срещнете някаква нередност 
-                                                  в сайта/системата/изображение или нарушение на тези „<strong>Условията за ползване</strong>“, 
-                                                  нарушение на Ваши авторски права или на някой друг.</li>
-                                              <li>5. Имате право да докладвате ако някое изображение накарнява Вашето или чуждо достойнство.</li>
-                                              <li>6. Имате право да разпространявате и посещавате всички страници и изображения на сайта.</li>
-                                              <li>7. Имате право да използвате всички услуги на сайта.</li>
-                                              <li>8. Имате право да ползвате <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="хостинг и споделяне на картинки">хостинга и споделянето</a></strong> 
-                                                  с приятели на качените от Вас <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="изображения">изображения</a></strong>.
-                                              </li>
-                                          </ul>
-                                      </div>
-                                      <div class="custom-text">
-                                          <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="хостинг и споделяне на изображения, снимки, картинки">Whistle Uploads - хостинг на изображения</a></strong> – 
-                                          запазва правото си да добавя, изтрива и редактира „Условията за ползване“ по всяко време,
-                                          като съответните промени ще бъдат публикувани на тази страница, а новите условия добавени като точки след т. 8.
-                                      </div>
-                                  </div>
-                              </div>
+                            </form>
                           </div>
+                        </div>
                       </div>
-                      <!-- //TAB: TOS -->
-                  </div><!-- //Tab Content -->
+                    </div>
+                  </div>
+                  <!-- //TAB: Homepage -->
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="tmf global-adverts">
-                    <ol class="breadcrumb" id="tmfMainMenu">
-                      <li><b>Ads</b></li>
-                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
-                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
-                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
-                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
-                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
-                      <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
-                    </ol>
+                <!-- TAB: About Us -->
+                <div class="tab-pane" id="about">
+                  <div class="tmf page-content">
+                    <div class="titler themebg">
+                      <h3>
+                      За нас - хората зад Whistle-BG.tk </h3>
+                    </div>
+                    <div class="bodyr">
+                      <ol class="breadcrumb">
+                        <li><a href="./" class="themetxt">Начална страница</a></li>
+                        <li><span class="active themetxt">За Нас</span></li>
+                      </ol>
+                      <div class="body-content">
+                        <div class="custom-text">
+                           Whistle-BG за краткото си съществуване събра много почитатели, посетители и прикачени изображения. Целта на сайта е да се подобри и да се представи по един по-добър начин услугата <strong><a href="index.php" rel="follow" title="хостинг за изображения">хостинг за изображения</a></strong>, <strong>картинки</strong>, снимки, аватари и фотоси, също така и <strong>споделяне на картинки и снимки</strong> с приятели.
+                        </div>
+                        <div class="custom-text">
+                           Сайтът главно е <strong>насочен към българската част от Мрежата</strong>. Освен място за съхранение на Вашите снимки - лични или не, картинки или общо казано изображения, Whistle иска да се предложи и като едно приятно място за прекарване на някаква част от времето. Като за тази цел предлага вече над <strong>27.574 изображения общо за 19 месеца</strong>, както галерия (несъществуваща към Май 2014) и API за спонсори, партньори, приятели и девелъпъри.
+                        </div>
+                        <div class="custom-text">
+                           Трябва да се има предвид, обаче, че от 8-ят месец сайта не функционира напълно, а достъпа до изображенията беше прекъснат на 13-ят месец. Предвид и двата огромни прилива в 4-ят и 5-ят месец с по 4000 прикачени изображения..
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- //TAB: About Us -->
+                <!-- TAB: Frequently Asked Questions -->
+                <div class="tab-pane" id="faq">
+                  <div class="tmf page-content">
+                    <div class="titler themebg">
+                      <h3>
+                      Често задавани въпроси и отговорите им </h3>
+                    </div>
+                    <div class="bodyr">
+                      <ol class="breadcrumb">
+                        <li><a href="./" class="themetxt">Начална страница</a></li>
+                        <li><span class="active themetxt">Често задавани въпроси</span></li>
+                      </ol>
+                      <div class="body-content">
+                        <div id="faq-52b701c056f88" class="panel-group accordion">
+                          <div class="panel">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                              <a class="accordion-toggle collapsed themetxt" data-toggle="collapse" href="#what-is-whistlebg">За какво е този сайт?</a>
+                              </h4>
+                            </div>
+                            <!-- .panel-heading -->
+                            <div id="what-is-whistlebg" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p>
+                                   Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                                </p>
+                              </div>
+                              <!-- .panel-body -->
+                            </div>
+                          </div>
+                          <!-- .panel -->
+                          <div class="panel">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                              <a class="accordion-toggle collapsed themetxt" data-toggle="collapse" data-parent="#faq-52b701c056f88" href="#faq-52b701c056f889">Do you provide product support?</a>
+                              </h4>
+                            </div>
+                            <!-- .panel-heading -->
+                            <div id="faq-52b701c056f889" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p>
+                                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                  Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                                </p>
+                              </div>
+                              <!-- .panel-body -->
+                            </div>
+                          </div>
+                          <!-- .panel -->
+                          <div class="panel">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                              <a class="accordion-toggle collapsed themetxt" data-toggle="collapse" data-parent="#faq-52b701c056f88" href="#faq-52b701c056f8815">How do I purchase your product?</a>
+                              </h4>
+                            </div>
+                            <!-- .panel-heading -->
+                            <div id="faq-52b701c056f8815" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p>
+                                   Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                                </p>
+                              </div>
+                              <!-- .panel-body -->
+                            </div>
+                          </div>
+                          <!-- .panel -->
+                        </div>
+                        <!-- #faq-52b701c056f88 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //TAB: Frequently Asked Questions -->
+                <!-- TAB: TOS -->
+                <div class="tab-pane" id="tos">
+                  <div class="tmf page-content">
+                    <div class="titler themebg">
+                      <h3>
+                      Условия за ползване на услугата</h3>
+                    </div>
+                    <div class="bodyr">
+                      <ol class="breadcrumb">
+                        <li><a href="./" class="themetxt">Начална страница</a></li>
+                        <li><span class="active themetxt">За Нас</span></li>
+                      </ol>
+                      <div class="body-content">
+                        <div class="custom-text">
+                           Всеки клиент ползващ услугите на сайта се съгласява да спазва изброените условия за ползване:
+                        </div>
+                        <div class="custom-text">
+                          <ul>
+                            <li>1. Като клиенти на сайта имате право да качвате неограничен брой <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="хостинг на изображения">изображения</a></strong> от форматите PNG, GIF, JPG, BMP</li>
+                            <li>2. Не може да качвате изображения нарушаващи авторски права, които не притежавате или без разрешение на собсвеника им.</li>
+                            <li>3. Не може да качвате изображения, които са обидни, накарняват нечие достойнство, пропагандират омраза или насилие.</li>
+                            <li>4. Желателно е да докладвате на посочените емайли в секция „<strong><a href="/Информация-за-сайта-за-сайта" rel="follow">Информация</a></strong>“ ако срещнете някаква нередност в сайта/системата/изображение или нарушение на тези „<strong>Условията за ползване</strong>“, нарушение на Ваши авторски права или на някой друг.</li>
+                            <li>5. Имате право да докладвате ако някое изображение накарнява Вашето или чуждо достойнство.</li>
+                            <li>6. Имате право да разпространявате и посещавате всички страници и изображения на сайта.</li>
+                            <li>7. Имате право да използвате всички услуги на сайта.</li>
+                            <li>8. Имате право да ползвате <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="хостинг и споделяне на картинки">хостинга и споделянето</a></strong> с приятели на качените от Вас <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="изображения">изображения</a></strong>. </li>
+                          </ul>
+                        </div>
+                        <div class="custom-text">
+                          <strong><a href="<?php echo $app->getDomain(); ?>" rel="follow" title="хостинг и споделяне на изображения, снимки, картинки">Whistle Uploads - хостинг на изображения</a></strong> – запазва правото си да добавя, изтрива и редактира „Условията за ползване“ по всяко време, като съответните промени ще бъдат публикувани на тази страница, а новите условия добавени като точки след т. 8.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //TAB: TOS -->
+              </div>
+              <!-- //Tab Content -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tmf global-adverts">
+                <ol class="breadcrumb" id="tmfMainMenu">
+                  <li><b>Ads</b></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                  <li><a href="#advertise" class="themetxt" data-href="advertise" data-toggle="tab">Реклама</a></li>
+                </ol>
               </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="tmf stats">
-                    <div class="titler themebg text-center">
-                      <h3>Статистика</h3>
-                    </div>
-                    <ul class="list-group">
-                      <li class="list-group-item"><span class="badge themebg">JPG</span>7,704</li>
-                      <li class="list-group-item"><span class="badge themebg">PNG</span>16,467</li>
-                      <li class="list-group-item"><span class="badge themebg">GIF</span>3,193</li>
-                      <li class="list-group-item"><span class="badge themebg">Общо</span>27.874</li>
-                      <li class="list-group-item"><span class="badge themebg">Днес</span>0</li>
-                      <li class="list-group-item themebg text-center"><em>от 26.10.2012г.</em></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div><!-- //col 2 rightside board-->
-
           </div>
-
         </div>
-
-        <div class="tmf global-footer fixed-bottom">
-          <ol class="breadcrumb themebg text-center" id="tmfMainMenu">
-            <li><a href="/">Начало</a></li>
-            <li><a href="#faq" data-href="faq" data-toggle="tab">Помощ</a></li>
-            <li><a href="#about" data-href="about" data-toggle="tab">За Нас</a></li>
-            <li><a href="#tos" data-href="tos" data-toggle="tab">Условия за ползване</a></li>
-            <li><a href="#advertise" data-href="advertise" data-toggle="tab">Реклама</a></li>
-            <li><a href="#developers" data-href="developers" data-toggle="tab">API</a></li>
-          </ol>
-
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="tmf stats">
+                <div class="titler themebg text-center">
+                  <h3>Статистика</h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item"><span class="badge themebg">JPG</span>7,704</li>
+                  <li class="list-group-item"><span class="badge themebg">PNG</span>16,467</li>
+                  <li class="list-group-item"><span class="badge themebg">GIF</span>3,193</li>
+                  <li class="list-group-item"><span class="badge themebg">Общо</span>27,874</li>
+                  <li class="list-group-item"><span class="badge themebg">Днес</span>0</li>
+                  <li class="list-group-item themebg text-center"><em>от 26.10.2012г.</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- //col 2 rightside board-->
       </div>
-        <!--
+    </div>
+    <div class="tmf global-footer fixed-bottom">
+      <ol class="breadcrumb themebg text-center" id="tmfMainMenu">
+        <li><a href="#home" data-href="faq" data-toggle="tab">Начало</a></li>
+        <li><a href="#faq" data-href="faq" data-toggle="tab">Помощ</a></li>
+        <li><a href="#about" data-href="about" data-toggle="tab">За Нас</a></li>
+        <li><a href="#tos" data-href="tos" data-toggle="tab">Условия за ползване</a></li>
+        <li><a href="#advertise" data-href="advertise" data-toggle="tab">Реклама</a></li>
+        <li><a href="#developers" data-href="developers" data-toggle="tab">API</a></li>
+      </ol>
+    </div>
+  </div>
+<!--
         <div class="tmf-background-ads">
             <img class="advertise" title="Background Ads" src="http://wallpapers.cc/files/walls/10898.jpg" alt="" data-href="https://www.google.bg/search?q=whistle-bg&oq=whistle-bg&pws=0">
         </div>
@@ -414,31 +376,19 @@
         </div>
       </footer>
       -->
-
-      <!-- CORE JAVASCRIPT -->
-      <script type="text/javascript">
-      var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod|Android/i) != null || screen.width <= 480;
-
-      if (isMobileDevice) {
-        window.location.replace(window.location + "mobile.php");
-      }
-      </script>
-      <script src="js/pace/pace.min.js"></script>
-
-      <script src="js/custom/jquery.min.js"></script>
-      <script src="js/custom/jquery.cookie.min.js"></script>
-      <script src="js/custom/custom.min.js"></script>
-      <script>
-      $(window).load(function(e) {
-        $('.pace').delay(450).fadeOut('slow');
-        
-      });
-      </script>
-
-      <script src="js/bootstrap/bootstrap.min.js"></script>
-      <script src="js/custom/prettify.js"></script>
-      <!--<script src="less/less-1.5.0.min.js"></script>-->
-      <!-- /CORE JAVASCRIPT -->
-
-    </body>
-    </html>
+    <!-- CORE JAVASCRIPT -->
+    <script src="js/pace/pace.min.js?dasdasd"></script>
+    <script src="js/custom/jquery.min.js"></script>
+    <script src="js/custom/jquery.cookie.min.js"></script>
+    <script src="js/custom/custom.js"></script>
+    <script>
+          $(window).load(function(e) {
+            $('.pace').delay(450).fadeOut('slow');
+          });
+          </script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/custom/prettify.js"></script>
+    <!--<script src="less/less-1.5.0.min.js"></script>-->
+    <!-- /CORE JAVASCRIPT -->
+  </body>
+</html>
