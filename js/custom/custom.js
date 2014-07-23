@@ -51,7 +51,7 @@ $(function() {
     $(".tmf.projection").addClass(t.attr("data-color"));
     $.cookie("themeColor", null);
     $.cookie("themeColor", t.attr("data-color"), {
-      expires: 5 * 60 * 60,
+      expires: 12 * 60 * 60,
       path: "/"
     })
   });
