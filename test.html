@@ -1,57 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hash</title>
-    <style>
-      body p {
-        color: #333;
-        font-family: verdana;
-      }
-      #sections p {
-        height: 500px;
-        margin: 30px;
-        padding: 30px;
-        line-height: 40px;
-        background-color: #eee;
-        border: 1px solid #ccb;
-        font-size: 30px;
-      }
-
-      #sections p a {
-        display: block;
-        float: right;
-        font-size: 14px;
-      }
-
-    </style>
-    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  </head>
-  <body>
-    <h1 id="top">Hash</h1>
-
-    <ul>
-      <li><a href="#">#</a></li>
-      <li><a href="#subsection">#subsection</a></li>
-      <li><a href="section?name=tana">section?name=tana</a></li>
-      <li><a href="section?name=tana#subsection">section?name=tana#subsection</a></li>
-    </ul>
-
-    <div id="sections">
-      <p><strong>A</strong><a href="#top">top</a></p>
-      <p><strong>B</strong><a href="#top">top</a></p>
-      <p id="subsection"><strong>C</strong><a href="#top">top</a></p>
-    </div>
-
-    <script>
-      page('/:section', section);
-      page();
-
-      function section(ctx, next) {
-        console.log('path: ', ctx.path);
-        console.log('querystring: ', ctx.querystring);
-        console.log('hash: ', ctx.hash);
-        console.log(' ');
-      }
-    </script>
-  </body>
-</html>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+$.get(
+    'http://www.corsproxy.com/' +
+    'en.wikipedia.org/wiki/Cross-origin_resource_sharing',
+    function(response) {
+        $(document).html(response);
+});
