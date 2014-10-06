@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SPA GITHUB API TUNNCKOCORE</title>
+  <meta name="fragment" content="!">
+  <link rel="stylesheet" type="text/css" href="//dgvwbhl3qdxul.cloudfront.net/assets/application-1a733cc4f3019d98cced4db459208ad7.css">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+  $.getJSON("https://rawgit.com/tunnckoCore/whistle-latest/gh-pages/posts.json", function(data) {
+    var items = [];
+    
+    items.push('<main class="wrap">');
+    
+    $.each(data, function(key, val) {
+      items.push('');
+      items.push('<article><h1 class="title">'+val.title+'</h1>');
+      items.push('<p class="summary">'+val.summary+'</p></article><br>');
+      items.push('');
+    });
+    
+    items.push('</main>');
+    
+    $('<div/>', {
+      'class': 'posts-show',
+      html: items.join('')
+    }).appendTo('body');
+  });
+  
+  if (window.location.search.indexOf('escaped_fragment') !== -1) {
+    window.location.replace('http://tunnckocore.github.io/whistle-latest/seo-test-raw.html');
+  }
+</script>
+</body>
+</html>
