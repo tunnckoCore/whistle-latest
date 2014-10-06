@@ -8,6 +8,7 @@
             $.ajax({
                 crossOrigin: true,
                 url: 'http://www.slackserv.com',
+                headers: {'Access-Control-Allow-Origin': true}
                 success: function(data) {
                     console.log(data);
                     //$('body').html(response);
