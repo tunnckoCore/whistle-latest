@@ -5,8 +5,13 @@
     <body>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script>
-            $.get('http://www.slackserv.com/index.php', function(response) {
-                $('body').html(response);
+            $.ajax({
+                crossOrigin: true,
+                url: 'http://www.slackserv.com',
+                success: function(data) {
+                    console.log(data);
+                    //$('body').html(response);
+                }
             });
         </script>
     </body>
