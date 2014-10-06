@@ -9,28 +9,28 @@
 <body>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-  $.getJSON("https://rawgit.com/tunnckoCore/whistle-latest/gh-pages/seo-test-posts.json", function(data) {
-    var items = [];
-    
-    items.push('<main class="wrap">');
-    
-    $.each(data, function(key, val) {
-      items.push('');
-      items.push('<article><h1 class="title">'+val.title+'</h1>');
-      items.push('<p class="summary">'+val.summary+'</p></article><br>');
-      items.push('');
-    });
-    
-    items.push('</main>');
-    
-    $('<div/>', {
-      'class': 'posts-show',
-      html: items.join('')
-    }).appendTo('body');
-  });
-  
   if (window.location.search.indexOf('escaped_fragment') !== -1) {
     window.location.replace('http://tunnckocore.github.io/whistle-latest/seo-test-raw.html');
+  } else {
+    $.getJSON("https://rawgit.com/tunnckoCore/whistle-latest/gh-pages/seo-test-posts.json", function(data) {
+      var rows = [];
+      
+      rows.push('<main class="wrap">');
+      
+      $.each(data, function(key, val) {
+        rows.push('');
+        rows.push('<article><h1 class="title">'+val.title+'</h1>');
+        rows.push('<p class="summary">'+val.summary+'</p></article><br>');
+        rows.push('');
+      });
+      
+      rows.push('</main>');
+      
+      $('<div/>', {
+        'class': 'posts-show',
+        html: rows.join('')
+      }).appendTo('body');
+    });
   }
 </script>
 </body>
